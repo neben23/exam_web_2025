@@ -322,7 +322,7 @@ footer a {
     .nav-links.active {
         display: flex;
     }
-}
+
     .benefits {
         padding: 20px; 
         gap: 30px; 
@@ -377,7 +377,7 @@ footer a {
     .benefit-content p {
         font-size: 1.2rem; 
     }
-
+}
 /* Mode Responsive pour Tablette */
 @media (max-width: 1024px) {
     .navbar {
@@ -397,52 +397,6 @@ footer a {
         display: flex;
         flex-direction: row;
         gap: 20px;
-    }
-    
-    .menu-toggle {
-        display: none;
-    }
-
-    .benefits {
-        padding: 40px;
-        gap: 40px;
-    }
-    
-    .benefit-item {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-    }
-    
-    .benefit-content {
-        max-width: 90%;
-        font-size: 1.2rem;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: rgba(0, 0, 0, 0.6);
-        color: white;
-        padding: 20px;
-        width: 80%;
-        border-radius: 10px;
-    }
-    
-    .benefit-image-container {
-        width: 100%;
-        height: 50vh; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
-    
-    .benefit-image-container img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        border-radius: 10px;
     }
 }
 
