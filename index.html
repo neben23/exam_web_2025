@@ -1,11 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Examen</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>Hello Worlddddddddd</div>
+    <header class="navbar">
+        <div class="logo">FoodSnap</div>
+        <nav>
+            <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="signup">Sign Up</button>
+            <button class="login">Log In</button>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-image">
+            <img src="plats-cuisines.jpg" alt="image de plats">
+        </div>
+    </section>
+    
+    <section class="features">
+        <div class="feature">
+            <h3><img src="logo1.png" alt="logo1">Personnalisation des repas</h3>
+            <p>Permet aux utilisateurs de personnaliser leurs repas selon leurs préférences alimentaires 
+                (végétarien, sans gluten, riche en protéines, etc.).</p>
+        </div>
+        <div class="feature">
+            <h3><img src="logo2.jpg" alt="logo2">Suivi nutritionnel</h3>
+            <p>Affiche les informations nutritionnelles détaillées des repas (calories, protéines, glucides, etc.).</p>
+        </div>
+        <div class="feature">
+            <h3><img src="logo3.jpg" alt="logo3">Livraison rapide</h3>
+            <p>Offre une livraison rapide et ponctuelle avec une estimation du temps de livraison.</p>
+        </div>
+        <div class="feature">
+            <h3><img src="logo4.png" alt="logo4">Abonnement flexible</h3>
+            <p>Propose des plans d'abonnement (hebdomadaire, mensuel) pour une livraison régulière de repas.</p>
+        </div>
+        <div class="feature">
+            <h3><img src="logo5.jpeg" alt="logo5">Suggestions basées sur l'IA</h3>
+            <p>Propose des recommandations de repas personnalisées en fonction des préférences 
+            et des habitudes alimentaires de l’utilisateur.</p>
+        </div>
+        <div class="feature">
+            <h3><img src="logo6.png" alt="logo6">Mode Écologique</h3>
+            <p>Propose des emballages écologiques et des options zéro déchet.</p>
+        </div>
+    </section>
+    
+    <section class="benefits">
+        <div class="benefit-item reverse">
+            <div class="benefit-image-container">
+                <img src="firstbenefice.jpg" alt="first benefice" class="benefit-image">
+            </div>
+            <div class="benefit-content">
+                <h2>Intelligence Nutritionnelle Sur Mesure</h2>
+                <ul>
+                    <li>Analyse personnalisée de vos besoins nutritionnels</li>
+                    <li>Calcul précis des apports nutritionnels</li>
+                    <li>Variété de plats frais et équilibrés</li>
+                </ul>
+            </div>
+        </div>
+        <div class="benefit-item">
+            <div class="benefit-content">
+                <h2>Transformation de Votre Bien-Être</h2>
+                <ul>
+                    <li>Retrouvez énergie et vitalité grâce à une alimentation intelligente</li>
+                    <li>Réduisez le stress lié à la préparation des repas</li>
+                    <li>Gagnez du temps sans compromettre votre santé</li>
+                    <li>Atteignez vos objectifs de forme et de bien-être en toute simplicité</li>
+                </ul>
+            </div>
+            <div class="benefit-image-container stacked">
+                <img src="SecondaireBenefice1.jpg" alt="secondaire benefice1" class="benefit-image main">
+                <img src="SecondaireBenefice2.jpg" alt="secondaire benefice2" class="benefit-image overlay">
+            </div>
+        </div>
+    </section>
+    
+    <section class="pricing">
+        <h2>Choose your plan</h2>
+        <div class="pricing-switch">
+            <button>Monthly</button>
+            <button>Annual</button>
+            <span class="arrow-texte"><span class="arrow">←</span> Save up to 20%!</span>
+        </div>
+        <div class="plans">
+            <div class="plan basic">
+                <h3>Flex</h3>
+                <p>€99,99</p>
+                <h5>Pour ceux qui ont un emploi du temps chargé mais souhaitent manger sainement.</h5>
+                <ul>
+                    <li>12 repas par mois (soit environ 3 repas par semaine)</li>
+                </ul>
+                <button>Choose this plan</button>
+            </div>
+            <div class="plan professional">
+                <h3>Équilibre</h3>
+                <p>€169,99</p>
+                <h5>Pour ceux qui mangent sainement et veulent un abonnement plus complet.</h5>
+                <ul>
+                    <li>20 repas par mois (soit environ 5 repas par semaine)</li>
+                </ul>
+                <button>Choose this plan</button>
+            </div>
+            <div class="plan enterprise">
+                <h3>Full Healthy</h3>
+                <p>€249,99</p>
+                <h5>Pour ceux qui souhaitent un service tout-en-un et un suivi nutritionnel optimal.</h5>
+                <ul>
+                    <li>30 repas par mois (soit environ 7 repas par semaine)</li>
+                </ul> 
+                <button>Choose this plan</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="signup-form">
+        <h2>Start your free trial</h2>
+        <p>Signup now. It's free and takes less than 3 minutes.</p>
+        <form>
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email address">
+            <input type="password" placeholder="Password">
+            <button>Get Started for Free</button>
+        </form>
+    </section>
+    
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Download</a></li>
+            </ul>
+        </nav>
+        <p>Rue Neuve 1717, 1000 Bruxelles, Belgique</p>
+        <p>&copy; 2025 FoodSnap. All rights reserved.</p>
+    </footer>
 </body>
 </html>

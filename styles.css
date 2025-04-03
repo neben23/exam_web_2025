@@ -1,0 +1,453 @@
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 50px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+
+.auth-buttons button {
+    padding: 10px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.signup {
+    background: black;
+    color: white;
+}
+
+.login {
+    background: white;
+    border: 1px solid #333;
+    color: #333;
+}
+
+/* Section Hero */
+.hero {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 70px); 
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    align-items: stretch; 
+}
+
+/* Image Hero : occupe l'espace restant à droite */
+.hero-image {
+    flex: 1; 
+    height: 100%; 
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+}
+
+
+/* Section Features */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.feature h3 img {
+    width: 45px;
+    height: auto;
+}
+
+/* Section Benefices */
+.benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 60px; 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 100px; 
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 60px; 
+    flex-direction: row;
+}
+
+.benefit-item.reverse {
+    flex-direction: row;
+}
+
+.benefit-content {
+    max-width: 60%; 
+    font-size: 1.1rem; 
+    line-height: 1.6; 
+}
+
+.benefit-image-container {
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    padding: 10px; 
+}
+
+.benefit-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px; 
+}
+
+/* Superposition */
+.benefit-image-container.stacked {
+    position: relative;
+}
+
+.benefit-image.main {
+    position: relative;
+    left: 50px;
+    z-index: 2;
+    bottom: 60px; 
+    width: 70%; 
+    height: auto;
+}
+
+.benefit-image.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65%; 
+    height: 100%;
+    z-index: 1;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Section Pricing */
+.pricing {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f1f3f5;
+}
+
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.plan {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+}
+
+/* Section Formulaire */
+.signup-form {
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 50%;
+    margin: 50px auto;
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.signup-form button {
+    background: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100%;
+}
+
+/* Pied de page */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Mode Responsive */
+
+@media (max-width: 1024px) {
+    .benefit-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .benefit-content, .benefit-image-container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        text-align: center;
+        z-index: 999;
+    }
+
+    .nav-links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-size: 1.2rem;
+        font-weight: bold;
+        display: block;
+    }
+
+    .menu-toggle {
+        font-size: 2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: block;
+        position: fixed;
+        top: 15px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    /* Affichage du menu quand actif */
+    .nav-links.active {
+        display: flex;
+    }
+}
+    .benefits {
+        padding: 20px; 
+        gap: 30px; 
+    }
+
+    .benefit-item {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+        position: relative;
+        width: 100%;
+    }
+
+    .benefit-image-container {
+        width: 100%; 
+        height: 60vh; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .benefit-image.main {
+        width: 100%; 
+        height: 100%;
+        object-fit: cover; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .benefit-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.6); 
+        color: white;
+        padding: 20px;
+        width: 90%; 
+        max-width: 350px;
+        border-radius: 10px;
+    }
+
+    .benefit-content h3 {
+        font-size: 1.8rem; 
+        margin-bottom: 10px;
+    }
+
+    .benefit-content p {
+        font-size: 1.2rem; 
+    }
+
+/* Mode Responsive pour Tablette */
+@media (max-width: 1024px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: white;
+        padding: 15px 50px;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+    
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    
+    .menu-toggle {
+        display: none;
+    }
+
+    .benefits {
+        padding: 40px;
+        gap: 40px;
+    }
+    
+    .benefit-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .benefit-content {
+        max-width: 90%;
+        font-size: 1.2rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        padding: 20px;
+        width: 80%;
+        border-radius: 10px;
+    }
+    
+    .benefit-image-container {
+        width: 100%;
+        height: 50vh; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .benefit-image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+}
+
+
+
+
+
+
